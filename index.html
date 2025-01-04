@@ -60,12 +60,85 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger-btn"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-btn-close" data-menu-close>
+            <svg class="icon-mobile-close" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="nav-menu-mobile">
+            <ul class="nav-menu-list">
+              <li class="nav-menu current">
+                <a class="nav-menu-link-studio" href="./index.html">Studio </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-menu-link">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-menu-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <adress class="adress-menu">
+            <ul class="menu-addr-list">
+              <li>
+                <a class="menu-addr-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="menu-addr-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+            <div class="menu-icon-link">
+              <ul class="social-list-card">
+                <li class="social-list-all-cards">
+                  <a class="cards-link" href="www.instagram.com"
+                    ><svg class="social-fill" width="16" height="16">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list-all-cards">
+                  <a class="cards-link" href="www.twitter.com"
+                    ><svg class="social-fill" width="16" height="16">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list-all-cards">
+                  <a class="cards-link" href="www.facebook.com"
+                    ><svg class="social-fill" width="16" height="16">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list-all-cards">
+                  <a class="cards-link" href="www.linkedin.com"
+                    ><svg class="social-fill" width="16" height="16">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </adress>
+        </div>
       </div>
     </header>
 
-    <!-- #andregion-header -->
+    <!-- #endregion-->
+    <!--#region hero -->
     <main>
-      <!-- Hero -->
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
@@ -74,8 +147,8 @@
           </button>
         </div>
       </section>
-      <!--endHero -->
-      <!-- benefits -->
+      <!--endregion -->
+      <!--#region benefits -->
       <section class="benefits">
         <div class="container">
           <h2 class="visually-hidden">Benefits</h2>
@@ -131,19 +204,20 @@
           </ul>
         </div>
       </section>
-      <!-- endbenefits -->
+      <!--#endregion-->
       <!-- ourteam -->
       <section class="our-team">
-        <div class="container">
+        <div class="container team-container">
           <h2 class="ourteam-title">Our Team</h2>
           <ul class="our-team-list">
             <li class="our-team-li">
               <img
                 class="img-list-item"
                 src="./images/our-team/mark-guerrero.jpg"
+                srcset="./images/our-team/mark-guerrero@2x.jpg 2x"
                 alt="mark-guerrero-avatar"
                 width="264"
-                height="264"
+                height="260"
               />
               <div class="team-name">
                 <h3 class="list-item-name">Mark Guerrero</h3>
@@ -184,9 +258,10 @@
               <img
                 class="img-list-item"
                 src="./images/our-team/tom-ford.jpg"
+                srcset="./images/tom-ford@2x.jpg 2x"
                 alt="tom-ford-avatar"
                 width="264"
-                height="264"
+                height="260"
               />
               <div class="team-name">
                 <h3 class="list-item-name">Tom Ford</h3>
@@ -227,9 +302,10 @@
               <img
                 class="img-list-item"
                 src="./images/our-team/camila-garcia.jpg"
+                srcset="./images/camila-garcia@2x.jpg 2x"
                 alt="camila-garcia-avatar"
                 width="264"
-                height="264"
+                height="260"
               />
               <div class="team-name">
                 <h3 class="list-item-name">Camila Garcia</h3>
@@ -270,9 +346,10 @@
               <img
                 class="img-list-item"
                 src="./images/our-team/daniel-wilson.jpg"
+                srcset="./images/daniel-wilson@2x.jpg 2x"
                 alt="daniel-wilson-avatar"
                 width="264"
-                height="264"
+                height="260"
               />
               <div class="team-name">
                 <h3 class="list-item-name">Daniel Wilson</h3>
@@ -314,7 +391,7 @@
       </section>
       <!-- endourteam -->
       <!-- ourportfolio -->
-      <section class="our-portfolio">
+      <section class="hidden" class="our-portfolio">
         <div class="container">
           <h2 class="our-portfolio-title">Our Portfolio</h2>
           <ul class="our-portfolio-list">
@@ -443,7 +520,7 @@
       </section>
     </main>
     <!-- footer -->
-    <footer class="footer">
+    <footer class="hidden" class="footer">
       <div class="container">
         <div class="footer-contain">
           <a class="footer-logo" href="./index.html">
@@ -506,7 +583,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="hidden" class="backdrop is-open" data-modal>
       <div class="modal-overlay">
         <button type="button" class="modal-btn" data-modal-close>
           <svg class="icon-close" width="8" height="8">
@@ -584,6 +661,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
