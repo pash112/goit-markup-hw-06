@@ -649,7 +649,7 @@ button {
   }
 }
 @media screen and (min-width: 1158px) {
-  .icons-benefits {
+  .benefits-icons {
     visibility: visible;
     display: flex;
     align-items: center;
